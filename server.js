@@ -19,3 +19,15 @@ app.listen(port, function(){
     console.log(`Example app listen on port ${port}!`)
 }
 )
+
+app.get("/route-get", function (req,res){
+    res.send("Este es el GET")})
+
+app.post("/route-post", function (req,res){
+        res.send("Estes es el POST")})
+
+app.put("/route-put", function (req,res){
+        res.send("Este es el PUT")})
+
+app.delete("/route-delete", function (req,res){
+         res.send("Este es el DELETE")})
